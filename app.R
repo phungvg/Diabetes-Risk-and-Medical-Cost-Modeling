@@ -1,4 +1,5 @@
 
+#R shiny
 library(shiny)
 library(tidyverse)
 library(caret)
@@ -6,16 +7,6 @@ library(pROC)
 library(MASS)     # lda/qda
 library(e1071)    # naiveBayes
 library(DT)
-
-# setwd("/Users/panda/Documents/School/UIC/Semester/Now/Fall 2025/BSTT_527/HW/HW3/shiny")
-# getwd()
-# library(rsconnect)
-# 
-# rsconnect::deployApp(
-#   appDir = "/Users/panda/Documents/School/UIC/Semester/Now/Fall 2025/BSTT_527/HW/HW3/shiny",                               # folder containing app.R
-#   appFiles = c("app.R", "diabetes.csv", "medical_cost.csv"),
-#   appName = "Diabetes_and_Medical_Cost"
-# )
 
 diab <- read.csv("diabetes.csv")
 cost <- read.csv("medical_cost.csv")
